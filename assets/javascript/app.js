@@ -35,7 +35,7 @@ $(document).ready(function() {
     }
 
     function resetAnswers() {
-        $("input:checked").prop("checked", "false");
+        $("input:checked").prop("checked", false);
     }
 
     function startGame() {
