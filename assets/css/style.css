@@ -1,0 +1,45 @@
+ body {
+    background-image: url('../images/train.jpg');
+  }
+
+#startPage{
+    height: 150px;
+    width: 800px;
+    padding: 15px;
+    margin: 30px;
+    background: rgb(198, 221, 235);
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    margin-left: 20px;
+}
+
+#quizPage{
+    background: rgb(198, 221, 235);
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    width: 700px;
+    margin: 20px;
+    padding: 15px;
+}
+
+#resultsPage{
+    background: rgb(198, 221, 235);
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+
+}
+
+.Title{
+    text-align: center;
+    color:white;
+    background: rgb(198, 221, 235);
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* 
+added multiple photo files for optional backgrounds or for adding pictures later */

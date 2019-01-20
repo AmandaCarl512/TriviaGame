@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Harry Potter Trivia Game!</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <!-- maybe use a lightning bolt emoji -->
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+<html>
+<div class= "Title">
+    <h1>
+        <i class="em em-owl"></i> Harry Potter (Book) Trivia! <i class="em em-dragon_face"></i><i class="em em-stopwatch"></i>
+    </h1>
+</div>
+
+<div id="startPage">
+    <h3>Ready to play?<br>
+    You'll have 30 seconds to answer 8 random Harry Potter questions.
+    </h3>
+    <button id="startButton">Test Your Knowledge</button>
+</div>
+
+<div id="quizPage" style="display:none">
+    <h1>Time Remaining:</h1> <h1 id="timer"></h1>
+    <ol>
+        <li>1. Which character is the niece of Bellatrix Lestrange?
+            <ul>
+                <input type="radio" name="question1" value="false">Luna Lovegood</br>
+                <input type="radio" name="question1" value="false">Narcissa Malfoy</br>
+                <input type="radio" name="question1" value="true">Nymphadora Tonks</br>
+                <input type="radio" name="question1" value="false">Pansy Parkinson</br>
+            </ul>
+        </li></br>
+        <li>2. Which Weasley family member made a life for himself working at the Romanian Dragon Sanctuary?</li>
+            <ul>
+                <input type="radio" name="question2" value="false">Percy</br>
+                <input type="radio" name="question2" value="false">Bill</br>
+                <input type="radio" name="question2" value="true">Charlie</br>
+                <input type="radio" name="question2" value="false">George</br>
+            </ul>
+        </li></br>
+        <li>3. Which potion did Harry brew so well, that Professor Slughorn rewarded him with a small vial of Felix Felicis?</li>
+            <ul>
+                <input type="radio" name="question3" value="false">Polyjuice Potion</br>
+                <input type="radio" name="question3" value="false">Amortentia</br>
+                <input type="radio" name="question3" value="false">Veritaserum</br>
+                <input type="radio" name="question3" value="true">The Draught of Living Death</br>
+            </ul>
+        </li></br>
+        <li>4. What is the name of the Centaur who Dumbledore hires to teach Divination after Professor Trelawny is fired?</li>
+            <ul>
+                <input type="radio" name="question4" value="false">Ronan</br>
+                <input type="radio" name="question4" value="false">Bane</br>
+                <input type="radio" name="question4" value="true">Firenze</br>
+                <input type="radio" name="question4" value="false">Rubeus</br>
+            </ul>
+        </li></br>
+        <li>5. Which item is not one of Voldemort's Horcruxes?</li>
+            <ul>
+                <input type="radio" name="question5" value="true">The sword of Gryffindor</br>
+                <input type="radio" name="question5" value="false">Marvolo Gaunt's Ring</br>
+                <input type="radio" name="question5" value="false">Helga Hufflepuff's goblet</br>
+                <input type="radio" name="question5" value="false">Nagini the Snake</br>
+            </ul>
+        </li></br>
+        <li>6. When Fred and George leave Umbridges's Hogwarts, which spectre did they tell "Give her hell for us!" as they made their dramatic exit?</li>
+            <ul>
+                <input type="radio" name="question6" value="false">The Bloody Baron</br>
+                <input type="radio" name="question6" value="true">Peeves the Poltergeist</br>
+                <input type="radio" name="question6" value="false">Nearly Headless Nick</br>
+                <input type="radio" name="question6" value="false">Moaning Myrtle</br>
+            </ul>
+        </li></br>
+        <li>7. Whose Patronus takes the form of an otter?</li>
+            <ul>
+                <input type="radio" name="question7" value="true">Hermonione Granger</br>
+                <input type="radio" name="question7" value="false">Cho Chang</br>
+                <input type="radio" name="question7" value="false">Ginny Weasley</br>
+                <input type="radio" name="question7" value="false">Neville Longbottom</br>
+            </ul>
+        </li></br>
+        <li>8. Which one is not one of the shops you could find in Diagon's Alley?
+            <ul>
+                <input type="radio" name="question8" value="false">Florean Fortescue's Ice Cream Parlour</br>
+                <input type="radio" name="question8" value="false">Flourish & Blotts</br>
+                <input type="radio" name="question8" value="true">Borgin & Burkes</br>
+                <input type="radio" name="question8" value="false">Madam Malkin's Robes</br>
+            </ul>
+        </li></br>
+    </ol>
+    <button id="submitQuiz">Submit</button>
+</div>
+
+<div id="resultsPage" style="display:none">
+    <h1 id="results"></h1>
+
+        <p>Right Answers: </p>
+        <p id="guessesCorrect"></p>
+        <p>Wrong Answers: </p>
+        <p id="guessesIncorrect"></p>
+        <p>Not Answered: </p>
+        <p id="noGuess"></p>
+
+</div>
+
