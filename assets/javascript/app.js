@@ -34,10 +34,18 @@ $(document).ready(function() {
         }
     }
 
+    function resetAnswers() {
+        $("input:checked").prop("checked", "false");
+    }
+
     function startGame() {
         $("#startPage").css("display", "none");
         $("#quizPage").css("display", "block");
         $("#resultsPage").css("display", "none");
+        guessesCorrect = 0;
+        guessesIncorrect = 0;
+        noGuess = 0;
+        startTime = 30;
         updateTimer();
         setInterval(updateTimer, 1000);
     }
@@ -57,6 +65,7 @@ $(document).ready(function() {
 
     $("#startButton").on("click", startGame);
     $("#submitQuiz").on("click", endGame);
+    $("#retry").on("click", startGame);
 
 
     // Find the selected answer in the HTML.
